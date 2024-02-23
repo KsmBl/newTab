@@ -122,3 +122,12 @@ body {
 {
 	transform: translateY(0);
 }
+
+
+.cat
+{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	z-index: -1;
+}

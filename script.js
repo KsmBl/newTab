@@ -1,8 +1,8 @@
-//change IP and PORT (remember to change the Port on the config file for the backend too)
-const IP = "http://12.345.67.890:1234"
+const IP = "http://85.215.49.180:60195"
 
 function openurl(url)
 {
+	var link = "whisper-me.de";
 	window.location.href = "//" + url;
 }
 
@@ -56,6 +56,10 @@ function searchGoogle()
 		return
 	} else if (query == "regex") {
 		openurl("regex101.com");
+		return
+	//thats basicly the same like (a == "a" || a == "b") but shorter
+	} else if (["git", "github"].includes(query)) {
+		openurl("github.com");
 		return
 	}
 
@@ -153,3 +157,4 @@ async function start()
 }
 
 start();
+
