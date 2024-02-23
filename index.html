@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> New Tab </title>
+	<link rel="stylesheet" type="text/css" href="/styles.css">
+	<link rel="icon" href="chrome://branding/content/about-logo.png">
+</head>
+
+<body>
+	<div class="search-bar">
+		<input id="searchInput" type="text" placeholder="Search...">
+		<button onclick="searchGoogle()"> Search </button>
+	</div>
+
+	<div id="itembox">
+	</div>
+
+	
+	<div id="settingsbar" class="hidden">
+		<div id="addicon">
+			<img src="/images/add.png" onclick="newIcon()"/>
+		</div>
+
+		<div id="reloadpage" onclick="reloadPage()">
+			<img src="/images/reload.png"/>
+		</div>
+
+		<div id="removeicon" onclick="removeIcon()">
+			<img src="/images/remove.png"/>
+		</div>
+	</div>
+
+	<script src="/script.js"></script>
+</body>
+</html>
